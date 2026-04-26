@@ -1,0 +1,87 @@
+/*1. gap vs margin*/
+
+/*“industry standards”*/
+/*❌ Too vague*/
+
+/*👉 Correct answer:*/
+/*gap is built for spacing between flex/grid children*/
+/*  Cleaner than margin because:*/
+/*  no last-child hacks*/
+/*  no directional issues*/
+/*  easier to maintain*/
+
+/*3. align-items removed*/
+
+/* “they shift left”*/
+/* ❌ Not correct*/
+
+/* 👉 Actual behavior:*/
+/* horizontal stays same*/
+/* vertical alignment becomes default = stretch*/
+
+/*  So items may:*/
+/*  stretch*/
+/*  look misaligned vertically*/
+
+/*❌ 3. Missing transition (feels abrupt)*/
+
+/*Real UI always has smooth motion*/
+/*✅ Add:*/
+/*transition: 0.2s ease;*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: lightsteelblue;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.navbar:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease;
+
+
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: dimgrey;
+
+
+}
+.nav-links a:hover{
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+.login-btn {
+    padding:8px 16px;
+    border: none;
+    font-weight: bold;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login-btn:hover{
+    color: dimgrey;
+    transform: scale(1.05);
+
+}
