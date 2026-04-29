@@ -1,0 +1,50 @@
+.container{
+font-family: Arial, Helvetica, sans-serif;
+   margin: auto;
+}
+
+.header{
+    margin-top: 50px;
+    /*padding: 40px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-container{
+display:flex;margin-bottom: 50px;
+flex-direction: row;
+gap: 20px;
+padding: 20px;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+
+}
+.primary-btn{
+    padding: 10px;
+    margin: 10px;
+}
+.primary-btn:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 50px;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.card h2{
+    font-weight: lighter;
+
+}
+.card p{
+
+    text-wrap: balance;
+    overflow-wrap: break-word;
+}
+
+
